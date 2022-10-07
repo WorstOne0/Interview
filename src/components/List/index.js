@@ -97,7 +97,7 @@ const List = () => {
         <S.Loading>
           <SpiralSpinner frontColor={"var(--color-primary)"} />
         </S.Loading>
-      ) : (
+      ) : userList.length > 0 ? (
         userList.map((item, index) => (
           <S.ItemContainer
             key={item.id}
@@ -134,6 +134,8 @@ const List = () => {
             </S.ItemButtons>
           </S.ItemContainer>
         ))
+      ) : (
+        <S.Empty>Nenhum usúario cadastrado</S.Empty>
       )}
     </S.Container>
   );

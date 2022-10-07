@@ -221,3 +221,15 @@ export const DeleteButton = styled.button`
     font-size: 2.4rem;
   }
 `;
+
+export const Empty = styled.div`
+  height: 25rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-primary);
+  font-size: 1.8rem;
+`;
